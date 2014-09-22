@@ -168,6 +168,10 @@ describe Moped::Collection do
         session[:users].find(scope: scope).count.should eq(2)
       end
     end
+
+    it 'retries on connection error' do
+
+    end
   end
 
   describe "#initialize" do
